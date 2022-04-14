@@ -3,6 +3,12 @@ body {
 	font-size: 120%;
 	margin: 1%;
 	padding: 1%;
+	background-image: url("../images/super-mario-background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -11,10 +17,11 @@ h1 {
 }
 
 img {
-	border: 3px solid black;
+	border: 3px;
 	padding: 8px;
 	margin: 8px;
 	border-radius: 3px;
+	max-width: 200px;
 }
 
 p, h1 {
@@ -47,8 +54,12 @@ div {
 }
 
 .pictures {
-	border: 1px solid black;
+	border: 1px;
 	margin: 48px 0;
+	justify-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	overflow: visible;
 }
 
 header, nav, main, h1, footer {
