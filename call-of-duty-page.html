@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0G788WG5N"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z0G788WG5N');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/gif">
 	<title>Call of Duty</title>
 </head>
 <body>
@@ -21,53 +32,67 @@
 		</nav>
 		<h1>Call of Duty</h1>
 	</header>
-	
-	<main id="main">
-		<p class="content" id="cod">
-		Call of Duty is a great series with multiple titles and more importantly, the diveresity of 
-		characters. The first-person shooter franchise published by Activision focuses on giving players a casual way to explore
-		and play with different firearms and objectives through campaign, multiplayer, and even zombies modes. Through Call of Duty, I have
-		discovered a long range of characters, from German Nazis to even people of color in the Middle East.
-		</p>
-	
-		<div class = "pictures">
-			<img src = "images/farah-karim-warzone.jpg" alt="Picture of Farah Ahmed Karim Character model from Modern Warfare 2019." width="200"/>
-			<img src = "images/farah-ahmed-buzz.jpeg" alt="Picture of Farah Ahmed with buzz cut and in prison clothing." width="200"/>
-			<img src = "images/farah-ahmed-karim-modern-warfare-2019.jpg" alt="Picture of Farah Ahmed Karim with headband." width="200"/>
+		<main id="main">
+			<div class="pictures">
+				<div class="codimg" id="u1">
+					<img src = "images/farah-karim-warzone.jpg" alt="Picture of Farah Ahmed Karim Character model from Modern Warfare 2019." id="cod1"/>
+					<img src = "images/farah-ahmed-buzz.jpeg" alt="Picture of Farah Ahmed with buzz cut and in prison clothing." class="rotate" onclick="rotatoro()" id="cod2"/>
+					<img src = "images/farah-ahmed-karim-modern-warfare-2019.jpg" alt="Picture of Farah Ahmed Karim with headband." id="cod3"/>
+				</div>
+				<div class="codimg" id="u2">
+					<img src = "images/takeo-masaki-codmobile.jpg" alt="Screenshot of Japanese zombies chracter Takeo from CoD Zombies in CoD Mobile." id="cod4"/>
+					<img src = "images/takeo-maski-cod-zombies.jpg" alt="Picture of Takeo from Black Ops 1 zombies." class="rotate" onclick="rotatoro()" id="cod5"/>
+					<img src = "images/takeo-pointing-firearm.jpg" alt="Screenshot of Japanese zombies chracter Takeo from CoD Zombies." id="cod6"/>
+				</div>
+				<div class="codimg" id="u3">
+					<img src = "images/savimbi-face.jpeg" alt="Picture of character model of Savimbi." id="cod7"/>
+					<img src = "images/jonas-sabimbi-bo1-mm1.jpeg" alt="Picture of solider with grenade launcher." class="rotate" onclick="rotatoro()" id="cod8"/>
+					<img src = "images/savimbi-fal-victory.jpeg" alt="Picture of soldier holding FAL in victory." id="cod9"/>
+				</div>
+			
+				<p class="content" id="cod">
+				Call of Duty is a great series with multiple titles and more importantly, the diveresity of 
+				characters. The first-person shooter franchise published by Activision focuses on giving players a casual way to explore
+				and play with different firearms and objectives through campaign, multiplayer, and even zombies modes. Through Call of Duty, I have
+				discovered a long range of characters, from German Nazis to even people of color in the Middle East.
+				</p>
+				<p class="content" id="codcod">
+				Farah Ahmed Karim is one of the few eye-catching characters. With the reboot of Modern Warfare in 2019, Farah caught attention
+				as the Leading Commander of the Urzikstan Liberation Force that killed the antogonist Roman Barkov in order to establish liberation for her 
+				country. She resonates with many Muslims and Middle Eastern gamers as they see a Muslim woman taking down an oppressor. She is shown in multiple 
+				shots which shows the different depictions of Muslims. They can be shown in complete hijabs, partial covering of hair, or no covering of hair. 
 
-			<img src = "images/takeo-masaki-codmobile.jpg" alt="Screenshot of Japanese zombies chracter Takeo from CoD Zombies in CoD Mobile." width="200"/>
-			<img src = "images/takeo-maski-cod-zombies.jpg" alt="Picture of Takeo from Black Ops 1 zombies." width="200"/>
-			<img src = "images/takeo-pointing-firearm.jpg" alt="Screenshot of Japanese zombies chracter Takeo from CoD Zombies." width="200"/>
-
-			<img src = "images/savimbi-face.jpeg" alt="Picture of character model of Savimbi." width="200"/>
-			<img src = "images/jonas-sabimbi-bo1-mm1.jpeg" alt="Picture of solider with grenade launcher." width="200"/>
-			<img src = "images/savimbi-fal-victory.jpeg" alt="Picture of soldier holding FAL in victory." width="200"/>
-		</div>
-
-		<p class="content" id="cod">
-		Farah Ahmed Karim is one of the few eye-catching characters. With the reboot of Modern Warfare in 2019, Farah caught attention
-		as the Leading Commander of the Urzikstan Liberation Force that killed the antogonist Roman Barkov in order to establish liberation for her 
-		country. She resonates with many Muslims and Middle Eastern gamers as they see a Muslim woman taking down an oppressor. She is shown in multiple 
-		shots which shows the different depictions of Muslims. They can be shown in complete hijabs, partial covering of hair, or no covering of hair. 
-		<div>
-		Captain Takeo Masaki appears in multiple Call of Duty Zombies modes from titles like Black Ops 1/2/3, CoD Mobile, and almost in every CoD 
-		developed by Treyarch. He's known for being the imfamous Japanse soldier from the Imperial Japanese Army who fights alongside his American, German,
-		 and Russian partner to fight against the horde of zombies. His appearance is quite a favorite amongst players as they like the samurai-like characteristics
-		 that he presents. He appears with his katana, hair in a bun, and in distressed clothing from Imperial Japan. Japanese representation brought more diversity
-		 into the series. Activision even decided to make his model playable within CoD Mobile, so you can capture objectives on the go with a katana behind the back.
-		</div>
-		<div>
-		<em>"Our journey to victory has begun! Death to MPLA"</em> are the most memorable lines of Jonas Savimbi. Savimbi appears in Call of Duty: Black Ops 2 as political
-		leader who led UNITA against the communists of MPLA of Angola. Although his emphasis as a Black character is less prominent, gamers are able to see the strength that
-		exists amongst Africa. Players will recognize the character for his use of the MM1 grenade launcher as he plows through enenmies alongside the main character to 
-		eventually see a victory.
-		</div>
-		</p>
-	</main>
+				Captain Takeo Masaki appears in multiple Call of Duty Zombies modes from titles like Black Ops 1/2/3, CoD Mobile, and almost in every CoD 
+				developed by Treyarch. He's known for being the imfamous Japanse soldier from the Imperial Japanese Army who fights alongside his American, German,
+				and Russian partner to fight against the horde of zombies. His appearance is quite a favorite amongst players as they like the samurai-like characteristics
+				that he presents. He appears with his katana, hair in a bun, and in distressed clothing from Imperial Japan. Japanese representation brought more diversity
+				into the series. Activision even decided to make his model playable within CoD Mobile, so you can capture objectives on the go with a katana behind the back.
+				
+				"Our journey to victory has begun! Death to MPLA" are the most memorable lines of Jonas Savimbi. Savimbi appears in Call of Duty: Black Ops 2 as political
+				leader who led UNITA against the communists of MPLA of Angola. Although his emphasis as a Black character is less prominent, gamers are able to see the strength that
+				exists amongst Africa. Players will recognize the character for his use of the MM1 grenade launcher as he plows through enenmies alongside the main character to 
+				eventually see a victory.
+				</p>
+			</div>
+		</main>
 	
 	<footer>
 		<p>Abir Ahmed &copy; 2022</p>
 	</footer>
+	<script>
+        function rotatoro() {
+            var col = document.getElementsByClassName("content")[0].style.color
+            if (col == "black"){
+                document.getElementsByClassName("content")[0].style.color = "white"
+                document.getElementsByClassName("content")[1].style.color = "white"
+            }
+            else {
+                document.getElementsByClassName("content")[0].style.color = "black"
+                document.getElementsByClassName("content")[1].style.color = "black"
+            }
+            
+        }
+    </script>
 </body>
 </html>
 
