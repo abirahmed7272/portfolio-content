@@ -35,23 +35,23 @@ img:hover {
 }
 
 img:nth-child(3n + 3):hover {
-    filter: grayscale();
-    border: 6px dashed rgb(253, 47, 25);
-    padding: 8px;
-    margin: 8px;
-    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+	filter: grayscale();
+    border: 8px dashed red;
 }
 
 img:nth-child(3n + 3):hover {
-    border: 6px solid pink;
     padding: 10px;
     margin: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
+	border: 8px solid red;
 }
 
 .pictures {
 	border: 1px;
-	margin: 48px 0;
+	margin: 50px 0;
 	justify-items: center;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -127,7 +127,7 @@ img:nth-child(3n + 3):hover {
 
 .content {
 	background-color: wheat;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 5px;
 	grid-column: 1;
     grid-row: auto;
@@ -150,9 +150,14 @@ img:nth-child(3n + 3):hover {
     }
 }
 
+.image:hover {
+    transform: rotate(360deg);
+    animation: rotate(360deg);
+}
+
 header, nav, main, h1, footer {
 	margin: 8px 0;
-	border: 1px solid black;
+	border: 2px;
 }
 
 nav {
