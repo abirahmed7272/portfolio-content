@@ -1,5 +1,5 @@
 # portfolio-content
-Click [here](abirahmed7272.github.io/portfolio-content) to access the project.
+Click [here](https://abirahmed7272.github.io/portfolio-content/) to access the project.
 This portfolio shows content about video game topics while completing the following objectives in HTML5, CSS3, JavaScript, and the POUR design principles of accessible design:
 
 * Understanding the interactions between web browsers and web servers using Hypertext Transport Protocol (HTTP)
